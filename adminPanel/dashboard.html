@@ -14,7 +14,7 @@
 
   <div class="left_drawer" id="left_drawer">
 
-    <img src="../logo.png" class="icon">
+    <img src="../icons/logo.png" class="icon">
     <span>AdminPanel</span>
     <button id="btn_dashboard" onclick="location.href='dashboard.html'">Dashboard</button>
     <Button id="btn_settings" onclick="location.href='settings.html'">Settings</Button>
@@ -27,7 +27,7 @@
     </div>
   </div>
 
-  <script src="adminPanel.js"></script>
+  <script src="adminPanel.js"></script> <!---iskrip men-->
 
 
 
@@ -72,7 +72,7 @@
         <!--4-->
         <div class="data1-containers" id="reveenue">
           <img src="/icons/dollar.png" class="icon1">
-          <span class="data-title">Revenuer</span>
+          <span class="data-title">Revenue</span>
           <span class="sum" id="Rev_sum">000</span>
           <span class="rate" id="Rev_rate">0% increace</span>
 
@@ -81,41 +81,74 @@
 
       <!--row2-->
       <!-- user_activity-->
-      <div class="row2">
-        <div class="user_activity-container" id="user_activity">
-          <span class="title">User Activity</span>
-          <div class="btn_time-container">
-            <button class="btn_time" id="btn_weekly" onclick="btn11()">Weekly</button>
-            <button class="btn_time" id="btn_monthly" onclick="btn12()">Monthly</button>
-            <button class="btn_time" id="btn_yearly" onclick="btn13()">Yearly</button>
-          </div>
-          <div class="scrollable-content_container">
 
+      <div id="user_table">
 
+        <table id="users">
+          <tr class="tittle">
+            <th>Name</th>
+            <th>Possition</th>
+            <th>Office</th>
+            <th>Age</th>
+            <th>Start date</th>
+            <th>Salary</th>
+          </tr>
+          
+          <tr id="users_data">
+            <th>marasigan eljhay a</th>
+            <th>tambay</th>
+            <th>bahay lang</th>
+            <th>16</th>
+            <th>09/28/2008</th>
+            <th>50.00p/day</th>
+          </tr>
 
-          </div>
+         <tr>
+          <th>hi</th>
+         </tr>
+         <tr>
+          <th>hi</th>
+         </tr>
+         <tr>
+          <th>hi</th>
+         </tr>
+         <tr>
+          <th>hi</th>
+         </tr>
+         <tr>
+          <th>hi</th>
+         </tr>
+         <tr>
+          <th>hi</th>
+         </tr>
+         <tr>
+          <th>hi</th>
+         </tr>
+         <tr>
+          <th>hi</th>
+         </tr>
+         <tr>
+          <th>hi</th>
+         </tr>
+         <tr>
+          <th>hi</th>
+         </tr>
+         <tr>
+          <th>hi</th>
+         </tr>
+         <tr>
+          <th>hi</th>
+         </tr>
+         <tr>
+          <th>hi</th>
+         </tr>
+         <tr>
+          <th>hi</th>
+         </tr>
 
-        </div><!--user activity   ;  -->
-
-        <div class="Trafic_Sources-container">
-          <span class="title">Trafic Sources</span>
-          <div class="scrollable-content_container">
-
-
-
-          </div>
-
-        </div>
+        </table>
       </div>
 
-      <div class="Recent_Activity-container">
-        <span class="title">Recent Activity</span>
-        <button class="viewall">View all</button>
-        
-        <div class="scrollable-content_container">
-
-        </div>
-      </div>
     </div><!--page body ;  -->
 
   </div><!--close code for dashboard-->
