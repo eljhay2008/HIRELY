@@ -8,7 +8,7 @@
     border-radius: clamp(1px, 2vw, 3px);
     margin-left: 30px;
     width: 45%;
-    height: 160px;
+    height: 250px;
     color: #004aad;
     position: relative;
 }
@@ -50,6 +50,10 @@
     .active_users {
         width: 100%;
     }
+        .AU_btns>button {
+        font-size: 1.2vw;
+
+    }
 }
 
 @media (max-width:768px) {
@@ -59,10 +63,17 @@
     .active_users {
         width: 90%;
         margin-bottom: 20px;
+        height: 160px;
+    }
+
+    .AU_btns>button {
+        font-size: clamp(0px, 2vw, 16px);
+
     }
 }
-#total_user{
-        font-size: clamp(45px, 10vw, 100px);
+
+#total_user {
+    font-size: clamp(45px, 10vw, 70px);
     transform: scaleX(0.8);
 }
 
@@ -75,9 +86,30 @@
 
 #NR_day,
 #NR_week,
-#NR_month{
+#NR_month {
     font-size: clamp(22px, 2vw, 30px);
 
+}
+
+.AU_btns {
+    position: absolute;
+    border: 1px solid #004aad;
+    height: fit-content;
+    right: 10px;
+    top: 5px;
+    background-color: #004aad;
+}
+
+.AU_btns>button {
+    background-color: white;
+    border: 1px solid #004aad;
+    font-family: 'knockout';
+    color: #004aad;
+}
+
+.AU_btns>button:hover {
+    background-color: #004aad;
+    color: white;
 }
 
 .new_regs {
