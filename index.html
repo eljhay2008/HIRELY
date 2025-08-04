@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIRELY ADMIN PAGE</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div class="content">
+        <div class="icon_appname">
+            <img src="icons/logo.png" class="icon">
+            <span class="appname">HIRELY</span>
+        </div>
+
+        <div class="container">
+            <form class="form" id="form">
+                <span>ADMIN LOG IN</span>
+                <input type="text" placeholder="Enter username" class="input" id="username" required>
+                <input type="password" placeholder="Enter password" class="input" id="password" required>
+                <input type="submit" value="LOG IN" class="btn_login" onclick="submit()">
+            </form>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+
+<script>
+    const loginButton = document.getElementsByClassName("btn_login")[0];
+
+    if (loginButton) {
+        loginButton.addEventListener("click", handleLogin);
+    }
+
+    function handleLogin() {
+        const user = document.getElementById("username").value;
+        const pass = document.getElementById("password").value;
+        const form = document.getElementById("form");
+
+        if (user === "admin" && pass === "123") {
+            form.action = "adminPanel/dashboard.html";
+        } else if (user === "" || pass === "") {
+            alert("please fill up the form");
+            return;
+        } else {
+            alert("Incorrect username or password");
+            return;
+        }
+    }
+
+</script>
+
+</html>
