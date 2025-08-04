@@ -50,32 +50,33 @@
       <div class="active_users">
         <span>ACTIVE USERS</span>
         <div class="AU_btns">
-          <button onclick="ActiveUser(daily)">Daily</button>
-          <button onclick="ActiveUser(weekly)">Weekly</button>
-          <button onclick="ActiveUser(monthly)">Monthly</button>
+          <button id="Au_d" onclick="ActiveUser('daily')">Daily</button>
+          <button id="Au_w" onclick="ActiveUser('weekly')">Weekly</button>
+          <button id="Au_m" onclick="ActiveUser('monthly')">Monthly</button>
         </div>
       </div>
 
       <div>
-  <div class="new_regs">
-        <span>NEW REGISTRATIONS</span>
-    <div class="NR_data">
-        <div class="NR_day">
-          <span id="NR_day">+000</span>
-          <span>Day</span>
+        <div class="new_regs">
+          <span>NEW REGISTRATIONS</span>
+          <div class="NR_data">
+            <div class="NR_day">
+              <span id="NR_day">+000</span>
+              <span>Day</span>
+            </div>
+            <div class="NR_week">
+              <span id="NR_week">+000</span>
+              <span>Week</span>
+            </div>
+            <div class="NR_month">
+              <span id="NR_month">+000</span>
+              <span>Month</span>
+            </div>
+          </div>
+          <img src="../icons/new_regs.png" style="margin-left: 20px; margin-right: 20px;">
         </div>
-        <div class="NR_week">
-          <span id="NR_week">+000</span>
-          <span>Week</span>
-        </div>
-        <div class="NR_month">
-          <span id="NR_month">+000</span>
-          <span>Month</span>
-        </div>
-        </div>
-      </div>
 
-    
+
       </div>
 
     </div>

@@ -6,22 +6,22 @@
     display: flex;
     box-shadow: 0 0 10px gray;
     border-radius: clamp(1px, 2vw, 3px);
-    margin-left: 30px;
     width: 45%;
+    margin-left: 30px;
     height: 250px;
     color: #004aad;
     position: relative;
 }
 
-.total_user span {
+.total_user > span {
     margin: 5px;
 }
 
-.new_regs span {
+.new_regs > span {
     margin: 5px;
 }
 
-.active_users span {
+.active_users > span {
     margin: 5px;
 }
 
