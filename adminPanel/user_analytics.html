@@ -6,7 +6,7 @@
 
   <title>HIRELY Dashboard</title>
   <link rel="stylesheet" href="adminPanel.css">
-  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="user_analytics.css">
   <script src="adminPanel.js"></script> <!---iskrip men-->
 
 </head>
@@ -19,7 +19,7 @@
     <span>AdminPanel</span>
     <button onclick="location.href='dashboard.html'">Dashboard</button>
     <Button onclick="location.href='user_analytics.html'">User Analytics</Button>
-    <Button onclick="location.href='user_management.thml'">User Management</Button>
+    <Button onclick="location.href='user_management.html'">User Management</Button>
     <Button onclick="location.href='security.thml'">Security</Button>
     <Button onclick="location.href='settings.html'">Settings</Button>
 
@@ -34,27 +34,44 @@
 
   <!--pages-->
 
-  <div class="page"> <!--settings-->
+  <div class="page"> <!--dashboard-->
 
     <div class="header_container">
-      <span class="header1">Settings</span>
+      <span class="header1">User Analytics</span>
     </div>
-
-
 
     <div class="page-body">
 
+      <div class="total_user">
+        <span>TOTAL USER</span>
+        <span id="total_user">000</span>
+      </div>
 
+      <div class="active_users">
+        <span>ACTIVE USERS</span>
+      </div>
 
+      <div>
+  <div class="new_regs">
+        <span>NEW REGISTRATIONS</span>
+    <div class="NR_data">
+        <div class="NR_day">
+          <span id="NR_day">+000</span>
+          <span>Day</span>
+        </div>
+        <div class="NR_week">
+          <span id="NR_week">+000</span>
+          <span>Week</span>
+        </div>
+        <div class="NR_month">
+          <span id="NR_month">+000</span>
+          <span>Month</span>
+        </div>
+        </div>
+      </div>
 
+    
+      </div>
 
-
-
-
-    </div><!--page body ;  -->
-
-  </div><!--close code for settings-->
-
-</body>
-
-</html>
+    </div>
+  </div>
