@@ -2,7 +2,7 @@
 .new_regs,
 .active_users {
     font-family: 'knockout';
-    font-size: 12px;
+    font-size: clamp(0px, 2vw, 16px);
     display: flex;
     box-shadow: 0 0 10px gray;
     border-radius: clamp(1px, 2vw, 3px);
@@ -22,7 +22,7 @@
 }
 
 .active_users span {
-    margin: 5px;        
+    margin: 5px;
 }
 
 
@@ -39,16 +39,17 @@
     .page-body {
         display: grid;
         gap: 20px;
-        grid-template-columns: repeat(2,45%);
+        grid-template-columns: repeat(2, 45%);
         grid-template-areas:
             ".total_user .actiive_users"
             ".new_regs   ";
     }
+
     .total_user,
-.new_regs,
-.active_users {
-    width: 100%;
-}
+    .new_regs,
+    .active_users {
+        width: 100%;
+    }
 }
 
 @media (max-width:768px) {
@@ -60,18 +61,32 @@
         margin-bottom: 20px;
     }
 }
+#total_user{
+        font-size: clamp(45px, 10vw, 100px);
+    transform: scaleX(0.8);
+}
 
-.NR_day,.NR_week,.NR_month{
+.NR_day,
+.NR_week,
+.NR_month {
     display: flex;
     flex-direction: column;
 }
 
-.new_regs{
+#NR_day,
+#NR_week,
+#NR_month{
+    font-size: clamp(22px, 2vw, 30px);
+
+}
+
+.new_regs {
     display: flex;
     flex-direction: column;
 }
-.new_regs > .NR_data{
+
+.new_regs>.NR_data {
     display: flex;
-    width: 100%;
-    background-color: aqua;
+    margin-top: 10px;
+    justify-content: space-around;
 }
