@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>HIRELY Dashboard</title>
+  <link rel="stylesheet" href="adminPanel.css">
+  <link rel="stylesheet" href="dashboard.css">
+  <script src="adminPanel.js"></script> <!---iskrip men-->
+
+</head>
+
+<body>
+
+  <div class="left_drawer" id="left_drawer">
+
+    <img src="../icons/logo.png" class="icon">
+    <span>AdminPanel</span>
+    <button onclick="location.href='dashboard.html'">Dashboard</button>
+    <Button onclick="location.href='user_analytics.html'">User Analytics</Button>
+    <Button onclick="location.href='user_management.thml'">User Management</Button>
+    <Button onclick="location.href='security.thml'">Security</Button>
+    <Button onclick="location.href='settings.html'">Settings</Button>
+
+    <div class="adminuser_profile-container">
+      <img src="../logo.png" class="pfp">
+      <div>
+        <p class="adminuser" id="adminuser">Admin User</p>
+        <p class="adminemail" id="adminemail">admin@example.com</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!--pages-->
+
+  <div class="page"> <!--dashboard-->
+
+    <div class="header_container">
+      <span class="header1">Dashboard</span>
+    </div>
+
+
+
+    <div class="page-body">
+      <!--data row1:)-->
+      <div class="row1">
+        <!--1-->
+        <div class="data1-containers" id="totat_user">
+          <img src="/icons/users.png" class="icon1">
+          <span class="data-title">Total User</span>
+          <span class="sum" id="TU_sum">000</span>
+          <span class="rate" id="TU_rate">0% increase</span>
+
+
+        </div>
+        <!--2-->
+        <div class="data1-containers" id="content_items">
+          <img src="/icons/text-lines.png" class="icon1">
+          <span class="data-title">Content items</span>
+          <span class="sum" id="CI_sum">000</span>
+          <span class="rate" id="CI_rate">0% increase</span>
+
+        </div>
+        <!--3-->
+        <div class="data1-containers" id="total_views">
+          <img src="/icons/eye.png" class="icon1">
+          <span class="data-title">Total views</span>
+          <span class="sum" id="TV_sum">000</span>
+          <span class="rate" id="TV_rate">0% increase</span>
+
+        </div>
+      </div>
+
+      <!--row2-->
+      <!-- user_activity-->
+
+      <div id="user_table">
+
+        <table id="users">
+          <tr class="tittle">
+            <th>Name</th>
+            <th>Position</th>
+            <th>Office</th>
+            <th>Age</th>
+            <th>Start date</th>
+            <th>Salary</th>
+          </tr>
+
+          <tr id="users_data">
+            <th>marasigan eljhay a</th>
+            <th>tambay</th>
+            <th>bahay lang</th>
+            <th>16</th>
+            <th>09/28/2008</th>
+            <th>50.00p/day</th>
+          </tr>
+
+          <tr>
+            <th>hi</th>
+          </tr>
+          <tr>
+            <th>hi</th>
+          </tr>
+          <tr>
+            <th>hi</th>
+          </tr>
+          <tr>
+            <th>hi</th>
+          </tr>
+          <tr>
+            <th>hi</th>
+          </tr>
+          <tr>
+            <th>hi</th>
+          </tr>
+          <tr>
+            <th>hi</th>
+          </tr>
+          <tr>
+            <th>hi</th>
+          </tr>
+          <tr>
+            <th>hi</th>
+          </tr>
+          <tr>
+            <th>hi</th>
+          </tr>
+          <tr>
+            <th>hi</th>
+          </tr>
+          <tr>
+            <th>hi</th>
+          </tr>
+          <tr>
+            <th>hi</th>
+          </tr>
+          <tr>
+            <th>hi</th>
+          </tr>
+
+        </table>
+      </div>
+
+    </div><!--page body ;  -->
+
+  </div><!--close code for dashboard-->
+
+</body>
+
+</html>

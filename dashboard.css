@@ -1,0 +1,126 @@
+ /*dashboard page*/
+
+ .row1 {
+   margin-bottom: 3vw;
+   display: flex;
+   flex-direction: row;
+   padding-right: 10px;
+   position: relative;
+   margin-left: 30px;
+   margin-right: 10px;
+   flex-wrap: wrap;
+ }
+
+ @media (max-width:768px) {
+   .row1 {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-template-rows: repeat(2, 1fr);
+   }
+
+   .data1-containers {
+     width: auto;
+   }
+
+   .rate {
+     grid-column: 1 / span 2;
+     display: flex;
+     justify-self: end;
+     font-size: clamp(10px, 5vw, 50px);
+     align-self: center;
+     padding-bottom: 10px;
+   }
+ }
+
+ .data1-containers {
+   box-shadow: 0 0 10px gray;
+   border-radius: clamp(1px, 2vw, 3px);
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(3, 1fr);
+   margin-right: 10px;
+   margin-bottom: 10px;
+   display: grid;
+   width: clamp(100px, 40vw, 400px);
+ }
+
+ .data-title {
+   font-family: 'knockout';
+   font-size: clamp(10px, 2.5vw, 130%);
+   margin-right: 10px;
+   margin-top: 10px;
+ }
+
+ .sum {
+   color: black;
+   font-family: 'knockout';
+   display: flex;
+   height: min-content;
+   font-size: clamp(100%, 2.5vw, 130%);
+ }
+
+ .rate {
+   font-family: 'knockout';
+   color: rgb(0, 255, 0);
+   font-size: clamp(10px, 3vw, 130%);
+   padding-right: 10px;
+   display: flex;
+   align-self: flex-start;
+ }
+
+ .data1_row {
+   width: 100%;
+ }
+
+ /*icons*/
+
+ .icon1 {
+   grid-row: 1 /span 3;
+   grid-column: 1;
+   margin-left: 10px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   margin-right: 10px;
+   width: 50%;
+ }
+
+ /*users table*/
+
+ #user_table {
+   display: flex;
+   flex-direction: column;
+   margin-left: 30px;
+   margin-top: 3vw;
+   margin-right: 10px;
+   border-radius: clamp(1px, 2vw, 3px);
+   box-shadow: 0 0 10px gray;
+   position: relative;
+   height: 350px;
+   margin-bottom: 20px;
+   overflow-y: scroll;
+ }
+
+ .tittle {
+   position: sticky;
+   top: 0;
+   font-family: 'knockout';
+   font-size: 12px;
+   z-index: 1;
+   background-color: white;
+   border: 1px solid gray;
+ }
+
+ #users,
+ th {
+   border: 1px solid gray;
+   border-collapse: collapse;
+   font-size: 16px;
+   table-layout: auto;
+   padding: 5px;
+ }
+
+
+ #data th {
+   overflow-x: hidden;
+   white-space: nowrap;
+
+ }

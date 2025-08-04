@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>HIRELY Dashboard</title>
+  <link rel="stylesheet" href="adminPanel.css">
+  <link rel="stylesheet" href="user_analytics.css">
+  <script src="adminPanel.js"></script> <!---iskrip men-->
+
+</head>
+
+<body>
+
+  <div class="left_drawer" id="left_drawer">
+
+    <img src="../icons/logo.png" class="icon">
+    <span>AdminPanel</span>
+    <button onclick="location.href='dashboard.html'">Dashboard</button>
+    <Button onclick="location.href='user_analytics.html'">User Analytics</Button>
+    <Button onclick="location.href='user_management.html'">User Management</Button>
+    <Button onclick="location.href='security.thml'">Security</Button>
+    <Button onclick="location.href='settings.html'">Settings</Button>
+
+    <div class="adminuser_profile-container">
+      <img src="../logo.png" class="pfp">
+      <div>
+        <p class="adminuser" id="adminuser">Admin User</p>
+        <p class="adminemail" id="adminemail">admin@example.com</p>
+      </div>
+    </div>
+  </div>
+
+  <!--pages-->
+
+  <div class="page"> <!--dashboard-->
+
+    <div class="header_container">
+      <span class="header1">User Analytics</span>
+    </div>
+
+    <div class="page-body">
+
+      <div class="total_user">
+        <span>TOTAL USER</span>
+        <span id="total_user">000</span>
+      </div>
+
+      <div class="active_users">
+        <span>ACTIVE USERS</span>
+      </div>
+
+      <div>
+  <div class="new_regs">
+        <span>NEW REGISTRATIONS</span>
+    <div class="NR_data">
+        <div class="NR_day">
+          <span id="NR_day">+000</span>
+          <span>Day</span>
+        </div>
+        <div class="NR_week">
+          <span id="NR_week">+000</span>
+          <span>Week</span>
+        </div>
+        <div class="NR_month">
+          <span id="NR_month">+000</span>
+          <span>Month</span>
+        </div>
+        </div>
+      </div>
+
+    
+      </div>
+
+    </div>
+  </div>
