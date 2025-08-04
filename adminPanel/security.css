@@ -1,0 +1,96 @@
+@media (min-width:768px) {
+    .page-body {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "login_history RT_alert"
+            "login_history RT_alert2"
+            "admin_action admin_action";
+    }
+
+    .RT_alert {
+        grid-area: RT_alert;
+    }
+
+    .RT_alert2 {
+        grid-area: RT_alert2;
+    }
+
+    .login_history {
+        height: 350px;
+        grid-area: login_history;
+    }
+
+    .admin_action {
+        grid-area: admin_action;
+        height: 200px;
+    }
+}
+
+@media(max-width:768px) {
+    .login_history {
+        height: 250px;
+    }
+
+    .admin_action {
+        height: 150px;
+    }
+
+    .RT_alert,
+    .RT_alert2 {
+        margin-left: 30px;
+    }
+}
+
+.login_history,
+.admin_action {
+    margin-left: 30px;
+    width: 90%;
+    box-shadow: 0 0 10px gray;
+    border-radius: clamp(1px, 3vw, 10px);
+    margin-bottom: 20px;
+}
+
+.login_history>span {
+    font-family: 'knockout';
+    display: flex;
+    padding: 5px;
+}
+
+#login_history {
+    width: 100%;
+}
+
+.tittle {
+    font-family: 'knockout';
+    position: sticky;
+    font-size: 16px;
+}
+
+.RT_alert,
+.RT_alert2 {
+    display: flex;
+    width: 90%;
+    height: 160px;
+    box-shadow: 0 0 10px gray;
+    border-radius: clamp(1px, 3vw, 10px);
+    background-color: white;
+    margin-bottom: 5px;
+}
+
+.RT_alert>span {
+    margin: 5px;
+    font-family: 'knockout';
+    align-items: center;
+}
+
+.RT_alert2>span {
+    margin: 5px;
+    font-family: 'knockout';
+}
+
+.admin_action>span {
+    margin: 5px;
+    font-family: 'knockout';
+}
