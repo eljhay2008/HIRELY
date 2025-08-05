@@ -1,9 +1,55 @@
-.user_management {
+@media (min-width:768px) {
+    .user_management,.Reports_Disputes,.Portfolio_Moderation,.Notifications_Announcements{
+        width: 90%;
+        height: 300px;
+    }
+    .page-body{
+        display: grid;
+        gap: 0;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas:
+        "user_maragement portfolio_moderation"
+        "reports_disputes notifications_announcements" ;
+    }
+
+}
+@media (max-width:768px){
+    .user_management,.Reports_Disputes,.Portfolio_Moderation,.Notifications_Announcements{
+        width: 90%;
+        height: 260px;
+    }
+}
+.user_management,.Reports_Disputes,.Portfolio_Moderation,.Notifications_Announcements{
     margin-left: 30px;
     box-shadow: 0 0 10px gray;
     border-radius: clamp(1px, 2vw, 3px);
-    width: 90%;
+    margin-bottom: 10px;
+}
+.user_management{
+    grid-area: user_maragement;
+}
+.Portfolio_Moderation{
+    grid-area: portfolio_moderation;
+}
+.Reports_Disputes{
+    grid-area: reports_disputes;
+}
+.Notifications_Announcements{
+    grid-area: notifications_announcements;
 }
 .user_management > span{
     margin: 5px;
+    font-family: 'knockout';
+}
+.Portfolio_Moderation>span{
+    margin: 5px;
+    font-family: 'knockout';
+}
+.Reports_Disputes > span{
+    margin: 5px;
+    font-family: 'knockout';
+}
+.Notifications_Announcements>span{
+    margin: 5px;
+    font-family: 'knockout';
 }
