@@ -13,15 +13,15 @@
     position: relative;
 }
 
-.total_user > span {
+.total_user>span {
     margin: 5px;
 }
 
-.new_regs > span {
+.new_regs>span {
     margin: 5px;
 }
 
-.active_users > span {
+.active_users>span {
     margin: 5px;
 }
 
@@ -50,7 +50,8 @@
     .active_users {
         width: 100%;
     }
-        .AU_btns>button {
+
+    .AU_btns>button {
         font-size: 1.2vw;
 
     }
@@ -108,6 +109,11 @@
 }
 
 .AU_btns>button:hover {
+    background-color: #004aad;
+    color: white;
+}
+
+.btn_active {
     background-color: #004aad;
     color: white;
 }

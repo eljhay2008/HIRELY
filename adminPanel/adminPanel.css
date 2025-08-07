@@ -105,6 +105,8 @@
                     color: white;
                     margin-bottom: 5px;
                     width: 90%;
+                    padding-bottom: 5px;
+                    padding-top: 5px;
                     transition: visibility 0s step-end;
                     visibility: hidden;
                     user-select: none;
