@@ -129,5 +129,5 @@
             .btn_login:active {
                 background-color: rgb(100, 100, 200);
                 transition: all 0.05s ease;
-                width: clamp(300px, 60%, 1000px);
+                width: clamp(200px, 40vw, 1000px);
             }
